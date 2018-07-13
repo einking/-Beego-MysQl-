@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>CheckAccount</title>
+<div class="container">
+	<form action="/ad/checkaccount" method="post" class="form-horizontal">
+        <div class="form-group">
+            <div class="col-md-5">
+                CardNum:
+               <input type="text" value="20151003030" class="form-control" name="CardNum" >
+            </div>
+			<div class="col-md-5">
+                Name:
+				<input type="text" value="Beams" class="form-control" name="Uname" >
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-3 col-sm-10">
+                <button type="submit" class="btn btn-info">{{ "submit"}}</button>
+            </div>
+        </div>
+    </form>
+</div>
+<script src="/static/js/reload.min.js"></script>
+</body>
+</html>

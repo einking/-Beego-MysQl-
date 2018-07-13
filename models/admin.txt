@@ -1,0 +1,8 @@
+this.Ctx.SetCookie("Success", "EstablishAccount Successful", 100, '/')
+this.Redirect("/ad/success", 302)
+
+this.Ctx.SetCookie("Success", "error ", 100, '/')
+this.Redirect("/ad/success", 302)
+
+
+this.Ctx.WriteString("页面输出字符串")

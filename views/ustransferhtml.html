@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Withdrals</title>
+<div class="container">
+    <div class="author">
+        Remain:
+        <a name="{{.Remain}}">{{.Remain}}</a> 
+    </div>
+    <form action="/us/ustransfer" method="post" class="form-horizontal">
+        <div class="form-group">
+			<div class="col-md-5">
+                TransferNumber:
+                <input type="text"  value="20171003030" class="form-control" name="TransferNumber" required>
+                Money:
+				<input type="text"  value="1000" class="form-control" name="Money" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-3 col-sm-10">
+                <button type="submit" class="btn btn-info">{{ "submit"}}</button>
+            </div>
+        </div>
+    </form>
+</div>
+  <script src="/static/js/reload.min.js"></script>
+</body>
+</html>

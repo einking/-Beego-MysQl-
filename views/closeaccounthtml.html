@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>CloseAccount</title>
+<div class="container">
+	<form action="/ad/closeaccount" method="post" class="form-horizontal">
+        <div class="form-group">
+            <label class="col-md-3 control-label">{{"UserId"}}: </label>
+            <div class="col-md-5">
+               <input type="text" value="5" class="form-control" name="UserId" required>
+            </div>
+            <label class="col-md-3 control-label">{{"CardNum"}}: </label>
+			<div class="col-md-5">
+				<input type="text"  value="20151003030" class="form-control" name="CardNum" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-3 col-sm-10">
+                <button type="submit" class="btn btn-info">{{ "submit"}}</button>
+            </div>
+        </div>
+    </form>
+</div>
+  <script src="/static/js/reload.min.js"></script>
+</body>
+</html>

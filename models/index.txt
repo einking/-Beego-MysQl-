@@ -1,0 +1,38 @@
+超链接： <a href="http://{{.Web}}">{{.web}}</a>
+
+文本显示：<a name="{{.Error}}">{{.Error}}</a> 
+
+一个文本框变化，另一个也跟着变化：
+<input onchange="txt2.value=txt.value*2" id=txt value=5>
+<input  id=txt2>
+
+复选框：
+<div class="form-group">
+    <label class="col-md-3 control-label">{{ "Role"}}: </label>
+        <div class="col-md-5">
+            <select class="form-control" name="role">
+                <option value="User">{{ "User"}}</option>
+                <option value="Admin">{{ "Admin"}}</option>
+            </select>
+        </div>
+</div>
+
+输入文本：
+<div class="form-group">
+            <label class="col-md-3 control-label">{{"usernumber"}}: </label>
+            <div class="col-md-5">
+               <input type="text" value="123" class="form-control" name="usernumber" required>
+            </div>
+			<label class="col-md-3 control-label">{{"password"}}: </label>
+			<div class="col-md-5">
+				<input type="text" value="123" class="form-control" name="password" required>
+            </div>
+        </div>
+
+
+<form id="user">
+    名字：<input name="username" type="text" />
+    年龄：<input name="age" type="text" />
+    邮箱：<input name="Email" type="text" />
+    <input type="submit" value="提交" />
+</form>
